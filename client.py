@@ -17,7 +17,7 @@ if prompt:= st.chat_input("Escribe tu prompt en este espacio"):
         st.text(prompt)
     
     response = requests.get(
-        http://localhost:8000/generate/text, params={"prompt": prompt}
+        f"http://localhost:8000/generate/text", params={"prompt": prompt}
     )
 
     response.raise_for_status()
